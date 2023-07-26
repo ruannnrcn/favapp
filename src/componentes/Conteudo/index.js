@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Conteudo() {
-  return (
-    <div>Conteudo</div>
-  )
+  // return <div>Aqui irá ficar o conteudo da página</div>;
 }

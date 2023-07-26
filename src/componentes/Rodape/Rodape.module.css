@@ -1,0 +1,34 @@
+:root {
+  --main-color: #ff6c6c;
+  --second-color: #ff3980;
+}
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer {
+  background-image: linear-gradient(var(--main-color), var(--second-color));
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: rgba(232, 237, 241, 0.815);
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.whatsapp,
+.instagram,
+.facebook,
+.twitter {
+  width: 35px;
+  gap: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}

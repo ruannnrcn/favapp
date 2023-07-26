@@ -7,9 +7,17 @@ function App() {
   return (
     <>
       <Cabecalho
-        logo="favicon.png"
-        titulo="Fav.io"
+        logo="favico.png"
+        titulo="fav.io"
         subtitulo="O melhor gerenciador da internet brasileira!!"
+      />
+      <Conteudo />
+      <Rodape
+        dataAtual="Data Atual: "
+        facebook="facebook.svg"
+        instagram="instagram.svg"
+        twitter="twitter.svg"
+        whatsapp="whatsapp.svg"
       />
     </>
   );
