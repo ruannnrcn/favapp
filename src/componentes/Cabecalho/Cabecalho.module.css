@@ -14,7 +14,7 @@
   background-image: linear-gradient(var(--main-color), var(--second-color));
 }
 
-.cabecalho img {
+.imagemHeader {
   width: 5%;
 }
 
@@ -28,7 +28,7 @@
   color: rgba(232, 237, 241, 0.815);
 }
 
-ul {
+.listHeader {
   display: flex;
   list-style: none;
   color: rgba(232, 237, 241, 0.815);
@@ -36,13 +36,13 @@ ul {
   font-size: 25px;
 }
 
-ul li {
+.topicos {
   padding: 10px;
   border: 1px solid rgba(232, 237, 241, 0.815);
   border-radius: 10px;
 }
 
-ul li:hover {
+.topicos:hover {
   cursor: pointer;
   background-color: #ff6c6c;
   transition: 0.5s;
