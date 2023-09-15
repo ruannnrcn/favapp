@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/favapp/static/css/main.4cc6c10c.css",
-    "main.js": "/favapp/static/js/main.7bca4c6d.js",
+    "main.css": "/favapp/static/css/main.d4961afd.css",
+    "main.js": "/favapp/static/js/main.a93fdd1f.js",
     "static/js/787.d5b7f4b1.chunk.js": "/favapp/static/js/787.d5b7f4b1.chunk.js",
     "index.html": "/favapp/index.html",
-    "main.4cc6c10c.css.map": "/favapp/static/css/main.4cc6c10c.css.map",
-    "main.7bca4c6d.js.map": "/favapp/static/js/main.7bca4c6d.js.map",
+    "main.d4961afd.css.map": "/favapp/static/css/main.d4961afd.css.map",
+    "main.a93fdd1f.js.map": "/favapp/static/js/main.a93fdd1f.js.map",
     "787.d5b7f4b1.chunk.js.map": "/favapp/static/js/787.d5b7f4b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cc6c10c.css",
-    "static/js/main.7bca4c6d.js"
+    "static/css/main.d4961afd.css",
+    "static/js/main.a93fdd1f.js"
   ]
 }
