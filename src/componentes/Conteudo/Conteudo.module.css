@@ -1,6 +1,38 @@
-.favoritosTitle{
-    color: #FF9F00;
-    text-align: start;
-    padding-left: 3rem;
-    font-size: 2rem;
+:root {
+  --laranja: #ff9d00ee;
+  --amarelo: #ffda2d;
+  --main-color: #ff6c6c;
+}
+
+.favoritosTitle {
+  color: var(--main-color);
+  text-align: start;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  font-family: fantasy;
+  margin: 0;
+}
+.fontTitle {
+  font-family: fantasy;
+}
+
+.main {
+  background-image: linear-gradient(0.1turn, var(--amarelo), var(--laranja));
+  height: 100%;
+  width: 100vw;
+}
+
+.containerDadosIndividual {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-family: fantasy;
+  flex-wrap: wrap;
+}
+
+.containerDados {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 3rem;
+  gap: 5rem;
 }
