@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import styles from "./Conteudo.module.css";
 
 const Estados = () => {
     const [nome, setNome]=useState("Google")
@@ -18,7 +19,7 @@ const Estados = () => {
     }
     return(
         <div>
-            <h1>Estados</h1>
+            <h1 className={styles.favoritosTitle}>Lista de Favoritos:</h1>
             <h1>{nome}</h1>
             <h1>{url}</h1>
 
@@ -27,7 +28,6 @@ const Estados = () => {
               <br />
               <input type="text" value={url} onChange={(e)=>setUrl(e.target.value)} />
               <button onClick={()=>adicionarFavorito(nome,url)}>Adicionar</button>
-              <h1>Favoritos</h1>
               <ul>
               { favoritos.map( (fav) => <li key={fav.url}>{ fav.nome } <br />{ fav.url }</li>) }
               </ul>
