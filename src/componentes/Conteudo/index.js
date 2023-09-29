@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./Conteudo.module.css";
 
-const Estados = () => {
+const Conteudo = () => {
   const [nome, setNome] = useState("Google");
   const [url, setUrl] = useState("https://www.google.com");
   const [favoritos, setFavoritos] = useState([]);
@@ -10,14 +10,15 @@ const Estados = () => {
   function adicionarFavorito(nome, url) {
     let favorito = { nome, url };
     setFavoritos([...favoritos, favorito]);
-    console.log(favoritos);
   }
 
   function handleInput(valor) {
+    console.log(valor)
     setNome(valor);
   }
   return (
     <div className={styles.main}>
+
       <h2 className={styles.favoritosTitle}>Lista de Favoritos:</h2>
 
       <div className={styles.containerDados}>
@@ -31,7 +32,6 @@ const Estados = () => {
         </div>
       </div>
 
-      {/* <form onSubmit={()=>alert("Site favorito adicionado!")}> */}
       <input
         type="text"
         value={nome}
@@ -39,19 +39,26 @@ const Estados = () => {
       />
       <br />
       <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} />
-      <button onClick={() => adicionarFavorito(nome, url)}>
-        Adicionar Favorito
-      </button>
+      <input type="button" onClick={()=>adicionarFavorito(nome, url)} value="adicionar" /> 
+
       <ul>
+      {favoritos[0]!=undefined &&
+  
+         favoritos.map((favorito) => (
+           <li key={favorito.nome}> {favorito.nome} : {favorito.url} </li>
+         ))} 
+      </ul>
+
+      {/* <ul>
         {favoritos.map((fav) => (
           <li key={fav.url}>
             {fav.nome} <br />
             {fav.url}
           </li>
         ))}
-      </ul>
+      </ul> */}
       {/* </form> */}
     </div>
   );
 };
-export default Estados;
+export default Conteudo;
