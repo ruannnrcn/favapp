@@ -18,7 +18,9 @@ function App() {
 
       <CadastroUsuario/>
 
-      {/* <LoginUsuario/> */}
+      <br></br>
+
+      <LoginUsuario/>
 
       <Rodape
         dataAtual="Data Atual: "
