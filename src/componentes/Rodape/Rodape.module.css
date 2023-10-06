@@ -10,7 +10,7 @@
 
 .footer {
   background-image: linear-gradient(var(--main-color), var(--second-color));
-  position: relative;
+  position: absolute;
   bottom: 0px;
   width: 100%;
   color: rgba(232, 237, 241, 0.815);

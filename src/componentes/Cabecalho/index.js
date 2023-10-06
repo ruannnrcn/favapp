@@ -8,9 +8,10 @@ export default function Cabecalho(props) {
       <p className={styles.titulo}>{props.titulo}</p>
       <nav>
         <ul className={styles.listHeader}>
+          <li className={styles.topicos}>Login</li>
+          <li className={styles.topicos}>Cadastrar-se</li>
           <li className={styles.topicos}>Home</li>
           <li className={styles.topicos}>Meus Favoritos</li>
-          <li className={styles.topicos}>Sair</li>
         </ul>
       </nav>
       {/* <Menu/> */}
