@@ -1,36 +1,9 @@
 import "./App.css";
-import Cabecalho from "./componentes/Cabecalho";
-import CadastroUsuario from "./componentes/CadastroUsuario";
-import Conteudo from "./componentes/Conteudo";
-import LoginUsuario from "./componentes/LoginUsuario";
-import Rodape from "./componentes/Rodape";
+import Principal from "./paginas/Principal"
 
 function App() {
-  return (
-    <>
-      <Cabecalho
-        logo="favico.png"
-        titulo="fav.io"
-        subtitulo="O melhor gerenciador da internet brasileira!!"
-      />
-
-      {/* <Conteudo /> */}
-
-      <CadastroUsuario/>
-
-      <br></br>
-
-      <LoginUsuario/>
-
-      <Rodape
-        dataAtual="Data Atual: "
-        facebook="facebook.svg"
-        instagram="instagram.svg"
-        twitter="twitter.svg"
-        whatsapp="whatsapp.svg"
-      />
-    </>
-  );
+  return <Principal />    
+  
 }
 
 export default App;
