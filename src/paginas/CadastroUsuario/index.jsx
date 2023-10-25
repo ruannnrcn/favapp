@@ -22,6 +22,7 @@ const CadastroUsuario = () => {
 
     return (
         <div>
+            <h2>Faça seu Cadastro!</h2>
             <form action="">
                 <label>E-Mail:</label>
                 <input type="email" 

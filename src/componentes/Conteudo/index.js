@@ -4,12 +4,13 @@ import styles from "./Conteudo.module.css";
 
 const Conteudo = () => {
   const [nome, setNome] = useState("Google");
+  const [important, setImportant] = useState(false);
   const [url, setUrl] = useState("https://www.google.com");
   const [favoritos, setFavoritos] = useState([]);
 
   function adicionarFavorito(nome, url) {
     let favorito = { nome, url };
-    setFavoritos([...favoritos, favorito]);
+    setFavoritos([...favoritos, favorito, important]);
   }
 
   function handleInput(valor) {
@@ -37,15 +38,20 @@ const Conteudo = () => {
         value={nome}
         onChange={(e) => handleInput(e.target.value)}
       />
+
       <br />
       <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} />
       <input type="button" onClick={()=>adicionarFavorito(nome, url)} value="adicionar" /> 
+      <br></br>
+
+      <input type="checkbox" name="checkbox" onChange={()=>setImportant(!important)}></input>
+      <label htmlFor="checkbox">Importante</label>
 
       <ul>
       {favoritos[0]!=undefined &&
   
          favoritos.map((favorito) => (
-           <li key={favorito.nome}> {favorito.nome} : {favorito.url} </li>
+           <li key={favorito.nome} style={favorito.important?{color:'red'}:{}}> {favorito.nome} : {favorito.url} </li>
          ))} 
       </ul>
 
